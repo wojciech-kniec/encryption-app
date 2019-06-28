@@ -1,6 +1,6 @@
 public class BasicCrypto implements Crypto {
 
-
+    @Override
     public byte[] encrypt(byte[] data) {
         byte[] enc = new byte[data.length];
 
@@ -11,7 +11,7 @@ public class BasicCrypto implements Crypto {
         return enc;
     }
 
-
+    @Override
     public byte[] decrypt(byte[] data) {
         byte[] enc = new byte[data.length];
         for (int i = 0; i < data.length; i++) {
