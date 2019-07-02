@@ -7,7 +7,7 @@ public class CryptoApp {
     public static void main(String[] args){
         Crypto crypto = new BasicCrypto();
 
-        String data = "Some nice text";
+        String data = "Some nice text is going to be encoded";
         String enc = new String(crypto.encrypt(data.getBytes()));
         String dec = new String(crypto.decrypt(enc.getBytes()));
 
